@@ -23,6 +23,9 @@
       },
       "api": {
         "neutritionhub": {}
+      },
+      "storage": {
+        "profileimagestorage": {}
       }
     }
   }
