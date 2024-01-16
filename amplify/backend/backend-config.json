@@ -1,4 +1,22 @@
 {
+  "api": {
+    "neutritionhub": {
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [],
+          "defaultAuthentication": {
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            },
+            "authenticationType": "API_KEY"
+          }
+        }
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync"
+    }
+  },
   "auth": {
     "neutritionhub503c47b9": {
       "customAuth": false,
@@ -26,6 +44,31 @@
       },
       "providerPlugin": "awscloudformation",
       "service": "Cognito"
+    }
+  },
+  "function": {
+    "getCuisinesName": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_getCuisinesName_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getCuisinesName"
+        }
+      ]
+    },
+    "AMPLIFY_function_getCuisinesName_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getCuisinesName"
+        }
+      ]
     }
   }
 }

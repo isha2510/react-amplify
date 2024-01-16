@@ -14,6 +14,15 @@
     "categories": {
       "auth": {
         "neutritionhub503c47b9": {}
+      },
+      "function": {
+        "getCuisinesName": {
+          "deploymentBucketName": "amplify-amplifyc0924e15c5774-staging-120816-deployment",
+          "s3Key": "amplify-builds/getCuisinesName-544d63765a585a345434-build.zip"
+        }
+      },
+      "api": {
+        "neutritionhub": {}
       }
     }
   }
